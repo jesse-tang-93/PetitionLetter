@@ -1,0 +1,306 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('./img/index_bg.png') 0 0 no-repeat;
+    background-size: 100%;
+    font-family: "Microsoft YaHei";
+}
+div{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*top-header*/
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+}
+.container header{
+    margin-top: 30px;
+    font-size: 0;
+    line-height: 108px;
+}
+.container header img{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*nav*/
+nav {
+    margin-top:10px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left, #0F95C0 , #00A0DA , #09B6F9);
+    background: -o-linear-gradient(right,#0F95C0 , #00A0DA , #09B6F9);
+    background: -moz-linear-gradient(right, #0F95C0 , #00A0DA , #09B6F9);
+    background: linear-gradient(to right, #0F95C0 , #00A0DA , #09B6F9);
+    line-height: 36px;
+    padding:0 20px;
+    color:#fff;
+}
+nav ul li{
+    padding: 0 17px;
+    font-size: 16px;
+    float: left;
+}
+nav ul li a{
+    color:#fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+nav ul li:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(left,#F29D06, #F8B13B , #FBCC7A);
+    background: -o-linear-gradient(right,#F29D06, #F8B13B , #FBCC7A);
+    background: -moz-linear-gradient(right, #F29D06, #F8B13B , #FBCC7A);
+    background: linear-gradient(to right, #F29D06, #F8B13B , #FBCC7A);
+}
+nav .menu-box{
+    overflow: hidden;
+    float: left;
+}
+nav .date-box{
+    float: right;
+}
+/*content-box*/
+.content-box{
+    background-color: #f6f6f6;
+    padding-top: 12px;
+    overflow: hidden;
+}
+.content-box .login-box{
+    width:320px;
+    background-color: #fff;
+    padding: 0 12px 12px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+.content-box .login-box .login-title .user-icon{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.content-box .login-box .login-title{
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.content-box .login-box .login-title:after{
+    content:  ' ';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #0168B7;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.content-box .login-box .login-title span{
+    vertical-align: middle;
+}
+.content-box .login-box .login-title{
+    line-height: 44px;
+}
+.content-box .login-box .in-item{
+    margin-top: 20px;
+    line-height: 38px;
+}
+.content-box .login-box .in-item label{
+    font-size: 14px;
+}
+.content-box .login-box .in-item input{
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    border: 1px solid #CDCDCD;
+    width: 233px;
+    outline: none;
+    box-sizing: border-box;
+    color: #7D7D7D;
+}
+.content-box .login-box .in-item.d-code input{
+    width: 112px;
+}
+div.code-box{
+    display: inline-block;
+    margin-left: 18px;
+    line-height: 36px;
+    padding: 0 27px;
+    border: 1px solid #CDCDCD;
+}
+p.login-tip{
+    text-align: right;
+    font-size: 14px;
+    color: #0168B7;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+.login-box .btn{
+    width: 138px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.login-box .btn-login{
+    background: -webkit-linear-gradient(left,#F29D06, #F8B13B , #FBCC7A);
+    background: -o-linear-gradient(right,#F29D06, #F8B13B , #FBCC7A);
+    background: -moz-linear-gradient(right, #F29D06, #F8B13B , #FBCC7A);
+    background: linear-gradient(to right, #F29D06, #F8B13B , #FBCC7A);
+    margin-right: 15px;
+}
+.login-box .btn-logup{
+    background: -webkit-linear-gradient(left, #0F95C0 , #00A0DA , #09B6F9);
+    background: -o-linear-gradient(right,#0F95C0 , #00A0DA , #09B6F9);
+    background: -moz-linear-gradient(right, #0F95C0 , #00A0DA , #09B6F9);
+    background: linear-gradient(to right, #0F95C0 , #00A0DA , #09B6F9);
+}
+/*banner*/
+.right-box{
+    float: left;
+}
+.banner{
+    padding: 12px 12px;
+    background-color: #fff;
+}
+/*tab*/
+.tab{
+    width:100%;
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 0 12px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+input[type='radio']{
+    display: none;
+}
+.tab label{
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #DDDDDD;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: #BB1C2B;
+}
+.label-1{
+    right:124px;
+    top: 0;
+}
+.label-2{
+    right: 0;
+    top: 0;
+}
+input[type='radio']:checked~div[class^='mod']{
+    display: block;
+}
+input[type='radio']:checked~label{
+    /*background: orange;*/
+    color: #151515;
+}
+[class^='mod']{
+    position: absolute;
+    top: 44px;
+    left: 12px;
+    right: 0;
+    display: none;
+}
+.tab .link-box{
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+    position: relative;
+}
+.tab .link-box:after{
+    content: ' ';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #0168B7;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.tab .link-box a{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #BB1C2B;
+}
+.tab .link-box img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.select-box{
+     text-align: right;
+}
+.select-box select{
+    margin-top: 8px;
+    width: 115px;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    padding:4px 20px;
+}
+.select-box select option{
+    outline: none;
+    line-height: 28px;
+}
+.city-box.first{
+    margin-top: 12px;
+}
+.city-box{
+    display: flex;
+}
+.city-box li{
+    flex: 6;
+    text-align: right;
+}
+.city-box li a{
+    color: #666;
+    font-size: 14px;
+}
+.city-box li a:hover{
+    color:#0168B7;
+    text-decoration: underline;
+}
+.menu-link-box{
+    margin-top: 10px;
+}
+.big-box{
+    overflow: hidden;
+}
+.menu-link-box{
+    font-size: 0;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+a.menu-link-item {
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+.logo-box{
+    position: relative;
+    left: -16px;
+}
